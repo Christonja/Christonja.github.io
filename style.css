@@ -1,0 +1,87 @@
+body { margin: 0; }
+
+h1 {
+	font-family: "Bungee Shade", sans-serif;
+}
+
+#navbar {
+	top: 0;
+	position: fixed;
+	width: 100%;
+	background: #c0c0aa;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #1cefff, #c0c0aa);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #1cefff, #c0c0aa); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+#navbar ul {
+	float: right;
+	list-style: none;
+}
+
+#navbar ul li {
+	float: left;
+	font-family: Sniglet, sans-serif;
+}
+
+#navbar ul li a {
+	text-decoration: none;
+	padding: 3px 10px 3px 3px;
+	color: black;
+}
+
+#navbar h2 {
+	font-family: Sniglet, sans-serif;
+	float: left;
+	padding-left: 10px;
+}
+
+#welcome {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	/* background gradient courtesy of Ighosh @ uiGradients.com Gradient name: Cocoaa Ice*/
+	background: #c0c0aa;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #1cefff, #c0c0aa);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #1cefff, #c0c0aa); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	height: 50vh;
+	width: 100%;
+}
+
+.title {
+	font-size: 4em;
+}
+
+#welcome p {
+	font-family: Sniglet, sans-serif;;
+}
+
+#grid {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 50% 50%;
+	grid-template-areas: "projects blogs";
+						"follow resources";
+}
+
+#projects {
+	grid-area: projects;
+}
+
+#blogs {
+	grid-area: blogs;
+}
+
+#blogs img {
+	width: 250px;
+	padding: 20px;
+}
+
+#follow {
+	grid-area: follow;
+}
+
+#resources {
+	grid-area: resources;
+}

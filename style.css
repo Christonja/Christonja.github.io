@@ -8,9 +8,8 @@ h1 {
 	top: 0;
 	position: fixed;
 	width: 100%;
-	background: #c0c0aa;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to left, #1cefff, #c0c0aa);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to left, #1cefff, #c0c0aa); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: #1caed9;
+	opacity: 0.9;
 }
 
 
@@ -34,6 +33,11 @@ h1 {
 	font-family: Sniglet, sans-serif;
 	float: left;
 	padding-left: 10px;
+	margin: 10px;
+}
+
+#navbar select {
+	display: none;
 }
 
 #welcome {
@@ -42,9 +46,9 @@ h1 {
 	justify-content: center;
 	flex-direction: column;
 	/* background gradient courtesy of Ighosh @ uiGradients.com Gradient name: Cocoaa Ice*/
-	background: #c0c0aa;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to left, #1cefff, #c0c0aa);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to left, #1cefff, #c0c0aa); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: #ffffff;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to bottom, #2980b9, #6dd5fa, #ffffff);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom, #2980b9, #6dd5fa, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	height: 50vh;
 	width: 100%;
 }
@@ -59,10 +63,30 @@ h1 {
 
 #grid {
 	display: grid;
+	justify-items: center;
 	grid-template-columns: 50% 50%;
 	grid-template-rows: 50% 50%;
-	grid-template-areas: "projects blogs";
+	grid-template-areas: "projects blogs"
 						"follow resources";
+
+
+}
+
+@media (max-width: 476px) {
+	#grid {
+		grid-template-columns: 100%;
+		grid-template-areas: "projects"
+							"blogs"
+							"follow"
+							"resources";
+	}
+
+}
+
+@media (max-width: 400px) {
+	.title {
+		font-size: 2em;
+	}
 }
 
 #projects {
@@ -82,6 +106,33 @@ h1 {
 	grid-area: follow;
 }
 
+#follow ul {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	align-items: left;
+}
+
+.f-images {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 10px;
+	text-decoration: none;
+	font-family: Sniglet, sans-serif;
+	color: black;
+}
+
+.f-images img {
+	height: 50px;
+	padding-right: 30px;
+}
+
 #resources {
 	grid-area: resources;
+}
+
+.copytext {
+	font-size: 10pt;
+	font-family: Sniglet, sans-serif;
 }

@@ -2,6 +2,7 @@ body { margin: 0; }
 
 h1 {
 	font-family: "Bungee Hairline", monospace;
+	font-size: 2em;
 }
 
 #navbar {
@@ -232,7 +233,7 @@ h1 {
 }
 
 .copytext {
-	font-size: 1em;
+	font-size: 80%;
 	font-family: "Titillium Web", sans-serif;
 	background: #e1e1ea;
 	text-align: center;
@@ -257,7 +258,7 @@ h1 {
 	text-decoration: none;
 	font-family: "Titillium Web", sans-serif;
 	color: blue;
-	font-size: 1em;
+	font-size: 80%;
 }
 
 #resources ul li a:hover {

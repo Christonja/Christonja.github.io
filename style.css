@@ -12,13 +12,14 @@ h1 {
 	background: #1caed9;
 	opacity: 0.9;
 	display: flex;
-	flex-direction: row;
+	flex-direction: row; 
 	justify-content: space-between;
 	flex-wrap: wrap;
 }
 
 #navbar > a {
-	color: black;	
+	color: black;
+	transition: color 1s;	
 }
 
 #navbar > a:hover {
@@ -38,6 +39,7 @@ h1 {
 	text-decoration: none;
 	padding-right: 20px;
 	color: black;
+	transition: color 1s;
 }
 
 #navbar ul li a:hover {
@@ -69,7 +71,7 @@ h1 {
 }
 
 #welcome p {
-	font-family: "Titillium Web", sans-serif;;
+	font-family: "Titillium Web", sans-serif;
 }
 
 #grid {
@@ -95,18 +97,19 @@ h1 {
 }*/
 
 @media only screen and (orientation: portrait) {
+	
 	#grid {
 		grid-template-columns: 100%;
 		grid-template-areas: "projects"
 							"blogs"
 							"resources"
 							"follow";
-
 	}
 	.blog-links img {
 		height: 87px;
 	}
 }
+
 
 @media (max-width: 410px) {
 	.title {
@@ -199,6 +202,10 @@ h1 {
     box-shadow: 0 0 20px #2980b9;
 }
 
+#blogs a img, .project-grid p {
+	transition: box-shadow 0.5s;
+}
+
 .blog-links {
 	text-align: center;
 }
@@ -218,15 +225,19 @@ h1 {
 	align-items: center;
 }
 
-#follow ul {
-	display: flex;
-	flex-direction: column;
+.follow-links {
+	display: table;
+	text-align: center;
 	list-style: none;
-	align-items: left;
+	margin: 0 auto;
 }
 
-#follow ul li a:hover {
-	color: #2980b9;
+.follow-links li a {
+	transition: color 0.5s;
+}
+
+.follow-links li a:hover {
+	color: #6dd5fa;
 }
 
 .f-images {
@@ -258,6 +269,17 @@ h1 {
 	font-family: "Titillium Web", sans-serif;
 	background: #e1e1ea;
 	text-align: center;
+	padding: 20px 0;
+}
+
+.copytext a {
+	color: blue;
+	text-decoration: none;
+	transition: color 0.5s;
+}
+
+.copytext a:hover {
+	color: #6dd5fa;
 }
 
 .copytext p {
@@ -281,9 +303,10 @@ h1 {
 	font-family: "Titillium Web", sans-serif;
 	color: blue;
 	font-size: 1em;
+	transition: color 0.5s;
 }
 
 #resources ul li a:hover {
-	color: #2980b9;
+	color: #6dd5fa;
 } 
 

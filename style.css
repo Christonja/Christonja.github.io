@@ -99,9 +99,12 @@ h1 {
 	#welcome p {
 		text-align: center;
 	}
+	#navbar ul li {
+		font-size: 0.8em;
+	}
 }
 
-@media screen 
+/*@media screen 
   and (device-width: 360px) 
   and (device-height: 640px) 
   and (-webkit-device-pixel-ratio: 4) 
@@ -117,7 +120,7 @@ h1 {
 	.title {
 		margin-top: 100px;
 	}
-}
+} */
 
 /*@media (max-width: 410px) {
 	.title {

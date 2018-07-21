@@ -85,10 +85,9 @@ h1 {
 }
 
 @media screen 
-  and (device-width: 360px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 4) 
-  and (orientation: portrait) {
+  and (max-device-width: 360px) 
+  and (max-device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 4)  {
 	#grid {
 		grid-template-columns: 100%;
 		grid-template-areas: "projects"
@@ -99,8 +98,11 @@ h1 {
 	#welcome p {
 		text-align: center;
 	}
+	#navbar ul {
+		padding: 0;
+	}
 	#navbar ul li {
-		font-size: 0.8em;
+		font-size: 0.9em;
 	}
 }
 

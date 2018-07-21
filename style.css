@@ -86,7 +86,7 @@ h1 {
 
 @media screen 
   and (max-device-width: 360px) 
-  and (max-device-height: 640px) 
+  /*and (max-device-height: 640px) */
   and (-webkit-device-pixel-ratio: 4)  {
 	#grid {
 		grid-template-columns: 100%;

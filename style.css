@@ -96,7 +96,7 @@ h1 {
 
 }*/
 
-@media only screen and (orientation: portrait) {
+@media (orientation: portrait) {
 	#grid {
 		grid-template-columns: 100%;
 		grid-template-areas: "projects"
@@ -104,9 +104,15 @@ h1 {
 							"resources"
 							"follow";
 	}
-	.blog-links img {
-		height: 87px;
+	.blog-links {
+		display: block;
 	}
+
+	.blog-links img {
+		width: auto;
+		height: auto;
+	}
+
 }
 
 
@@ -192,7 +198,7 @@ h1 {
 }
 
 .blog-links img {
-	width: 250px;
+	max-width: 250px;
 	padding: 0px;
 }
 
@@ -225,8 +231,10 @@ h1 {
 }
 
 .follow-links {
-	display: block;
+	display: table;
+	text-align: center;
 	list-style: none;
+	margin: 0 auto;
 }
 
 .follow-links li a {
@@ -257,7 +265,7 @@ h1 {
 	background: #e1e1ea;
 }
 
-#resources h1, #projects h1 {
+#projects h1 {
 	text-align: center;
 }
 

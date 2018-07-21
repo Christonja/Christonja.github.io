@@ -10,13 +10,22 @@ h1 {
 	width: 100%;
 	background: #1caed9;
 	opacity: 0.9;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
+#navbar > a {
+	color: black;	
+}
+
+#navbar > a:hover {
+	color: white;	
+}
 
 #navbar ul {
-	float: right;
 	list-style: none;
-	margin-top: 18px;
 }
 
 #navbar ul li {
@@ -30,15 +39,15 @@ h1 {
 	color: black;
 }
 
+#navbar ul li a:hover {
+	color: #fff;
+}
+
 #navbar h2 {
 	font-family: "Bungee Hairline", sans-serif;
 	float: left;
 	padding-left: 10px;
 	margin: 0;
-}
-
-#navbar select {
-	display: none;
 }
 
 #welcome {
@@ -94,9 +103,17 @@ h1 {
 	}
 }
 
-@media (max-width: 350px) {
+@media (max-width: 370px) {
 	#navbar h2 {
 		font-size: 1.3em;
+	}
+
+	#navbar ul {
+		padding: 0;
+	}
+
+	#navbar ul li {
+		font-size: 0.95em;
 	}
 }
 
@@ -116,6 +133,12 @@ h1 {
  	height: 250px;
  	object-fit: cover;
  	object-position: 0% 0%; 
+ 	border: 1px solid #c4c4c4;
+}
+
+.project-grid img:hover + p {
+ 	border-radius: 4px;
+    box-shadow: 0 0 20px #2980b9;
 }
 
 .project-grid a {
@@ -129,6 +152,11 @@ h1 {
 	background: #e1e1ea;
 	padding: 20px;
 	overflow: hidden;
+}
+
+.project-grid p:hover {
+	border-radius: 4px;
+    box-shadow: 0 0 20px #2980b9;
 }
 
 #blogs {
@@ -145,7 +173,12 @@ h1 {
 
 #blogs img {
 	width: 250px;
-	padding: 20px;
+	padding: 0px;
+}
+
+#blogs a img:hover {
+	border-radius: 4px;
+    box-shadow: 0 0 20px #2980b9;
 }
 
 #follow {
@@ -164,6 +197,10 @@ h1 {
 	flex-direction: column;
 	list-style: none;
 	align-items: left;
+}
+
+#follow ul li a:hover {
+	color: #2980b9;
 }
 
 .f-images {
@@ -193,6 +230,12 @@ h1 {
 .copytext {
 	font-size: 10pt;
 	font-family: "Titillium Web", sans-serif;
+	background: #e1e1ea;
+	text-align: center;
+}
+
+.copytext p {
+	margin: 0;
 }
 
 #resources ul{
@@ -211,3 +254,8 @@ h1 {
 	font-family: "Titillium Web", sans-serif;
 	color: blue;
 }
+
+#resources ul li a:hover {
+	color: #2980b9;
+}
+

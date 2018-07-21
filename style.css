@@ -96,7 +96,10 @@ h1 {
 
 }*/
 
-@media (orientation: portrait) {
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 4) {
 	#grid {
 		grid-template-columns: 100%;
 		grid-template-areas: "projects"
@@ -104,15 +107,6 @@ h1 {
 							"resources"
 							"follow";
 	}
-	.blog-links {
-		display: block;
-	}
-
-	.blog-links img {
-		width: auto;
-		height: auto;
-	}
-
 }
 
 

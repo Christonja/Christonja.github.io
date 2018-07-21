@@ -232,7 +232,7 @@ h1 {
 }
 
 .copytext {
-	font-size: 10pt;
+	font-size: 1em;
 	font-family: "Titillium Web", sans-serif;
 	background: #e1e1ea;
 	text-align: center;
@@ -257,6 +257,7 @@ h1 {
 	text-decoration: none;
 	font-family: "Titillium Web", sans-serif;
 	color: blue;
+	font-size: 1em;
 }
 
 #resources ul li a:hover {

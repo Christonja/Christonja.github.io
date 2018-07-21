@@ -97,7 +97,6 @@ h1 {
 }*/
 
 @media only screen and (orientation: portrait) {
-	
 	#grid {
 		grid-template-columns: 100%;
 		grid-template-areas: "projects"
@@ -226,10 +225,8 @@ h1 {
 }
 
 .follow-links {
-	display: table;
-	text-align: center;
+	display: block;
 	list-style: none;
-	margin: 0 auto;
 }
 
 .follow-links li a {

@@ -84,22 +84,11 @@ h1 {
 
 }
 
-/*@media (max-width: 600px) {
-	#grid {
-		grid-template-columns: 100%;
-		grid-template-areas: "projects"
-							"blogs"
-							"resources"
-							"follow";
-
-	}
-
-}*/
-
 @media screen 
   and (device-width: 360px) 
   and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 4) {
+  and (-webkit-device-pixel-ratio: 4) 
+  and (orientation: portrait) {
 	#grid {
 		grid-template-columns: 100%;
 		grid-template-areas: "projects"
@@ -109,6 +98,19 @@ h1 {
 	}
 }
 
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 4) 
+  and (orientation: landscape) {
+	#grid {
+		grid-template-columns: 100%;
+		grid-template-areas: "projects"
+							"blogs"
+							"resources"
+							"follow";
+	}
+}
 
 @media (max-width: 410px) {
 	.title {

@@ -156,7 +156,8 @@ h1 {
 }
 
 .project-grid p {
-	background: #e1e1ea;
+	border: 1px solid #6dd5fa;
+	background: #a4e3f9;
 	padding: 20px;
 	overflow: hidden;
 }
@@ -169,13 +170,13 @@ h1 {
 #blogs {
 	grid-area: blogs;
 	background: #e1e1ea;
-	background: -moz-linear-gradient(270deg, #FFFFFF 0%, #e1e1ea 100%); /* ff3.6+ */
+	background: -moz-linear-gradient(270deg, #FFFFFF 0%, #efeff7 100%); /* ff3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #FFFFFF), color-stop(100%, #e1e1ea)); /* safari4+,chrome */
-	background: -webkit-linear-gradient(270deg, #FFFFFF 0%, #e1e1ea 100%); /* safari5.1+,chrome10+ */
-	background: -o-linear-gradient(270deg, #FFFFFF 0%, #e1e1ea 100%); /* opera 11.10+ */
-	background: -ms-linear-gradient(270deg, #FFFFFF 0%, #e1e1ea 100%); /* ie10+ */
-	background: linear-gradient(180deg, #FFFFFF 0%, #e1e1ea 100%); /* w3c */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#e1e1ea',GradientType=0 ); /* ie6-9 */
+	background: -webkit-linear-gradient(270deg, #FFFFFF 0%, #efeff7 100%); /* safari5.1+,chrome10+ */
+	background: -o-linear-gradient(270deg, #FFFFFF 0%, #efeff7 100%); /* opera 11.10+ */
+	background: -ms-linear-gradient(270deg, #FFFFFF 0%, #efeff7 100%); /* ie10+ */
+	background: linear-gradient(180deg, #FFFFFF 0%, #efeff7 100%); /* w3c */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#efeff7',GradientType=0 ); /* ie6-9 */
 }
 
 .blog-links img {
@@ -202,7 +203,7 @@ h1 {
 
 #follow {
 	grid-area: follow;
-	background: #e1e1ea;
+	background: #efeff7;
 }
 
 #blogs h1, #follow h1, #resources h1 {
@@ -243,7 +244,7 @@ h1 {
 
 #resources {
 	grid-area: resources;
-	background: #e1e1ea;
+	background: #efeff7;
 }
 
 #projects h1 {
@@ -253,7 +254,7 @@ h1 {
 .copytext {
 	font-size: 1em;
 	font-family: "Titillium Web", sans-serif;
-	background: #e1e1ea;
+	background: #efeff7;
 	text-align: center;
 	padding: 20px 0;
 }
@@ -274,27 +275,34 @@ h1 {
 
 #resources ul{
 	margin-right: 20px;
-	margin-left: 5%;
+	margin-left: -10px;
 }
 #resources ul p {
 	font-family: "Titillium Web", sans-serif;
+	font-weight: bold;
 }
 
 #resources ul li {
-	list-style-type: circle;
-}
-
-#resources ul li a {
-	text-decoration: none;
+	list-style-type: none;
+	border: 1px solid #6dd5fa;
+	background: #a4e3f9;
+	padding: 5px;
+	margin: 5px;
 	font-family: "Titillium Web", sans-serif;
-	color: blue;
+	color: black;
 	font-size: 1em;
-	transition: color 0.5s;
+	transition: box-shadow 0.5s;
 }
 
-#resources ul li a:hover {
-	color: #6dd5fa;
+#resources ul li:hover {
+	border-radius: 4px;
+    box-shadow: 0 0 20px #2980b9;
 } 
+
+#resources ul a {
+	text-decoration: none;
+	text-align: center;
+}
 
 .hit-counter {
 	text-align: center;

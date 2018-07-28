@@ -160,6 +160,7 @@ h1 {
 	background: #a4e3f9;
 	padding: 20px;
 	overflow: hidden;
+	border-radius: 4px;
 }
 
 .project-grid p:hover {
@@ -292,6 +293,7 @@ h1 {
 	color: black;
 	font-size: 1em;
 	transition: box-shadow 0.5s;
+	border-radius: 4px;
 }
 
 #resources ul li:hover {

@@ -1,17 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 		<!-- Google Fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Bungee+Hairline|Titillium+Web" rel="stylesheet">
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+		<!-- Personal CSS -->
 		<link rel="stylesheet" href="style.css">
 
 
 		<!-- Image URL for social sharing sites-->
 		<meta property="og:image" content="https://christonja.github.io/Sharing-Image/Site.PNG"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
 	</head>
 	<body>
-		<div id="navbar">
+		<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+			<div class="container-fluid">
+			  <a class="navbar-brand" href="https://christonja.github.io/">Christon's Website</a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			    <ul class="navbar-nav mr-auto">
+			    	<li class="nav-item"><a class="nav-link" href="#welcome">Home</a></li>
+					<li class="nav-item"><a class="nav-link" href="#blogs">Blogs</a></li>
+					<li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+					<li class="nav-item"><a class="nav-link" href="#resources">Resources</a></li>
+					<li class="nav-item"><a class="nav-link" href="#follow">Follow Me!</a></li>
+			    </ul>
+			  </div>
+			</div>
+		</nav>
+		
+		<!-- <div id="navbar">
 			<a href="https://christonja.github.io/"><h2>Christon's Website</h2></a>
 			<ul>
 				<li><a href="#welcome">Home</a></li>
@@ -20,83 +44,120 @@
 				<li><a href="#resources">Resources</a></li>
 				<li><a href="#follow">Follow Me!</a></li>
 			</ul>
-		</div>
-		<div id="welcome">
-			<h1 class="title">Welcome</h1>
-			<p>MOOC Addict | Tech Enthusiast | Aspiring Web Developer</p>
-		</div>
-
-		<div id="grid">
-			<div id="projects">
-				<h1>Projects</h1>
-				<div class="project-grid">
-					<a href="https://codepen.io/christonja/full/wRGPJB" target="_blank"><img src="Project-Images/QuoteMachine.PNG"><p>Random Quote Machine</p></a>
-					<a href="https://evening-woodland-43477.herokuapp.com/" target="_blank"><img src="Project-Images/DevMatch.PNG" alt="Dev Match"><p>DevMatch Ruby on Rails SaaS App</p></a>
-					<a href="https://repl.it/@Christonja/ProperCompleteInstructions" target="_blank"><img src="Project-Images/change.PNG" alt="Cash Register"><p>Cash Register</p></a>
-					<a href="https://repl.it/@Christonja/FrailAnimatedClass" target="_blank"><img src="Project-Images/telephone.PNG" alt="Telephone Number Validator"><p>Telephone Number Validator</p></a>
-					<a href="https://repl.it/@Christonja/NextSympatheticFreesoftware" target="_blank"><img src="Project-Images/caesar.PNG" alt="Caesars Cipher"><p>Caesars Cipher</p></a>
-					<a href="https://repl.it/@Christonja/ClientsideAttentiveCubase" target="_blank"><img src="Project-Images/roman-num.PNG" alt="Roman Numeral Converter"><p>Roman Numeral Converter</p></a>
-					<a href="https://repl.it/@Christonja/AngelicSeveralGeneric" target="_blank"><img src="Project-Images/palindrome.PNG" alt="Palindrome Checker"><p>Palindrome Checker</p></a>
-					<a href="https://codepen.io/christonja/full/wXZxWX/" target="_blank"><img src="Project-Images/Landing-Page.PNG" alt="Product Landing Page"><p>Product Landing Page</p></a>
-					<a href="https://codepen.io/christonja/full/PBorLZ/" target="_blank"><img src="Project-Images/Portfolio.PNG" alt="Portfolio"><p>Portfolio</p></a>
-					<a href="https://codepen.io/christonja/full/QxzeJQ/" target="_blank"><img src="Project-Images/Survey-Form.PNG" alt="Survey Form"><p>Survey Form</p></a>
-					<a href="https://codepen.io/christonja/full/oyKxea/" target="_blank"><img src="Project-Images/Technical-Doco.PNG" alt="Technical Documentation"><p>Technical Documentation</p></a>
-					<a href="https://codepen.io/christonja/full/VdqOEM/" target="_blank"><img src="Project-Images/Tribute-Page.PNG" alt="Tribute Page"><p>Tribute Page</p></a>
+		</div> -->
+		<div class="container-fluid">
+			<div class="jumbotron">
+				<div class="welcome">
+					<h1 class="title">Welcome</h1>
+					<hr class="welcome-hr">
+					<p>MOOC Addict | Tech Enthusiast | Aspiring Web Developer</p>
 				</div>
 			</div>
-
-			<div id="blogs">
-				<h1>My Blogs</h1>
-				<div class="blog-links">
-					<a href="https://codingdetour.wordpress.com/" target="_blank"><img src="Images/CodingDetour.png" alt="Coding Detour Website"></a>
-					<a href="https://gamingdetour.wordpress.com/" target="_blank"><img src="Images/GamingDetour.png" alt="Gaming Detour Website"></a>
-				</div>
-			</div>
-			<div id="follow">
-				<h1>Follow Me</h1>
-					<div>
-						<ul class="follow-links">
-							<li><a class="f-images" href="https://www.linkedin.com/in/christon-altmann/" target="_blank"><img src="Icons/linkedin-logo.svg" alt="Linked In"><p>LinkedIn</p></a></li>
-							<li><a class="f-images" href="https://twitter.com/Christonja" target="_blank"><img src="Icons/tweety.svg" alt="Twitter"><p>Twitter</p></a></li>
-							<li><a class="f-images" href="https://github.com/Christonja" target="_blank"><img src="Icons/github.svg" alt="GitHub"><p>GitHub</p></a></li>
-							<li><a class="f-images" href="https://www.freecodecamp.org/christon" target="_blank"><img src="Icons/free-code-camp-brands.svg" alt="Free Code Camp" style="width: 50px"><p>FreeCodeCamp</p></a></li>
-							<li><a class="f-images" href="https://codepen.io/christonja/" target="_blank"><img src="Icons/3d-outlined-shape.svg" alt="Code Pen"><p>CodePen</p></a></li>
-							<li><a class="f-images" href="https://stackoverflow.com/cv/christon" target="_blank"><img src="Icons/overflowing-stacked-papers-tray.svg" alt="Stack Overflow"><p>StackOverflow</p></a></li>
-							<li><a class="f-images" href="https://gist.github.com/Christonja" target="_blank"><img src="Icons/github.svg" alt="GitHub Gists"><p>GitHub Gists</p></a></li>
-							<li><a class="f-images" href="https://repl.it/@Christonja" target="_blank"><img src="Icons/repl-it_logo.svg" alt="Repl it"><p>Repl.it</p></a></li>
-						</ul>
+		</div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xl-3 col-lg-4 col-md-5">
+					<div id="blogs">
+						<h1>My Blogs</h1>
+						<div class="blog-links">
+							<a href="https://codingdetour.wordpress.com/" target="_blank"><img src="Images/CodingDetour.png" alt="Coding Detour Website"></a>
+							<a href="https://gamingdetour.wordpress.com/" target="_blank"><img src="Images/GamingDetour.png" alt="Gaming Detour Website"></a>
+						</div>
 					</div>
-			</div>
-			<div id="resources">
-				<h1>Resources</h1>
-				<div>
-					<ul>
-						<p>MOOC providers I frequent:</p>
-						<a href="https://www.udacity.com/"><li>Udacity</li></a>
-						<a href="https://www.udemy.com/"><li>Udemy</li></a>
-						<a href="https://www.lynda.com/" target="_blank"><li>Lynda</li></a>
-						<a href="https://www.edx.org" target="_blank"><li>EDx</li></a>
-						<a href="https://www.freecodecamp.org/" target="_blank"><li>FreeCodeCamp</li></a>
-						<a href="https://upskillcourses.com/courses" target="_blank"><li>Upskillcourses</li></a>
-						<a href="https://www.khanacademy.org/"><li>Khan Academy</li></a>
-					</ul>
-					<ul>
-						<p>Helpful and interesting sites:</p>
-						<a href="https://www.w3schools.com/" target="_blank"><li>W3schools</li></a>
-						<a href="https://developer.mozilla.org/en-US/" target="_blank"><li>MDN Web Docs</li></a>
-						<a href="https://medium.com/basecs/" target="_blank"><li>Base CS Podcast</li></a>
-						<a href="https://www.codenewbie.org/podcast" target="_blank"><li>Code Newbie Podcast</li></a>
-						<a href="http://www.doradolist.com/universities.html" target="_blank"><li>CS Book list from top universities</li></a>
-						<a href="https://github.com/ossu/computer-science" target="_blank"><li>OSSU Free CS degree</li></a>
-					</ul>
+					<div id="resources">
+						<h1>Resources</h1>
+						<div>
+							<ul>
+								<p>MOOC providers I frequent:</p>
+								<li><a class="btn btn-light btn-sm" id="rbutton" href="https://www.udacity.com/">Udacity</a></li>
+								<li><a class="btn btn-light btn-sm" id="rbutton" href="https://www.udemy.com/">Udemy</a></li>
+								<li><a class="btn btn-light btn-sm" id="rbutton" href="https://www.lynda.com/" target="_blank">Lynda</a></li>
+								<li><a class="btn btn-light btn-sm" id="rbutton" href="https://www.edx.org" target="_blank">EDx</a></li>
+								<li><a class="btn btn-light btn-sm" id="rbutton" href="https://www.freecodecamp.org/" target="_blank">FreeCodeCamp</a></li>
+								<li><a class="btn btn-light btn-sm" id="rbutton" href="https://upskillcourses.com/courses" target="_blank">Upskillcourses</a></li>
+								<li><a class="btn btn-light btn-sm" id="rbutton" href="https://www.khanacademy.org/">Khan Academy</a></li>
+							</ul>
+							<ul>
+								<p>Helpful and interesting sites:</p>
+								<li><a class="btn btn-light btn-sm" id="rbutton" href="https://www.w3schools.com/" target="_blank">W3schools</a></li>
+								<li><a class="btn btn-light btn-sm" id="rbutton" href="https://developer.mozilla.org/en-US/" target="_blank">MDN Web Docs</a></li>
+								<li><a class="btn btn-light btn-sm" id="rbutton" href="https://medium.com/basecs/" target="_blank">Base CS Podcast</a></li>
+								<li><a class="btn btn-light btn-sm" id="rbutton" href="https://www.codenewbie.org/podcast" target="_blank">Code Newbie Podcast</a></li>
+								<li><a class="btn btn-light btn-sm" id="rbutton" href="http://www.doradolist.com/universities.html" target="_blank">CS Book list from top universities</a></li>
+								<li><a class="btn btn-light btn-sm" id="rbutton" href="https://github.com/ossu/computer-science" target="_blank">OSSU Free CS degree</a></li>
+							</ul>
+						</div>
+					</div>
+					<div id="follow">
+						<h1>Follow Me</h1>
+						<div>
+							<ul class="follow-links">
+								<li><a href="https://www.linkedin.com/in/christon-altmann/" target="_blank"><span>LinkedIn</span><i class="fab fa-linkedin-in"></i></a></li>
+								<li><a href="https://twitter.com/Christonja" target="_blank"><span>Twitter</span><i class="fab fa-twitter"></i></a></li>
+								<li><a href="https://github.com/Christonja" target="_blank"><span>GitHub</span><i class="fab fa-github"></i></a></li>
+								<li><a href="https://www.freecodecamp.org/christon" target="_blank"><span>FreeCodeCamp</span><i class="fab fa-free-code-camp"></i></a></li>
+								<li><a href="https://codepen.io/christonja/" target="_blank"><span>CodePen</span><i class="fab fa-codepen"></i></a></li>
+								<li><a href="https://stackoverflow.com/cv/christon" target="_blank"><span>StackOverflow</span><i class="fab fa-stack-overflow"></i></a></li>
+								<li><a href="https://gist.github.com/Christonja" target="_blank"><span>GitHub Gists</span><i class="fab fa-github"></i></a></li>
+								<li><a href="https://repl.it/@Christonja" target="_blank"><span>Repl.it</span><i class="fas fa-code"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-9 col-lg-8 col-md-7">
+					<div id="projects">
+						<h1>Projects</h1>
+						<div class="row flex">
+							<div class="col-xl-3 col-lg-4 col-md-6">
+								<a href="https://codepen.io/christonja/full/wRGPJB" target="_blank"><img class="img-fluid" src="Project-Images/QuoteMachine.PNG"><button class="btn btn-light btn-sm" id="pbutton">Random Quote Machine</button></a>
+							</div>
+							<div class="col-xl-3 col-lg-4 col-md-6">
+								<a href="https://evening-woodland-43477.herokuapp.com/" target="_blank"><img class="img-fluid " src="Project-Images/DevMatch.PNG" alt="Dev Match"><button class="btn btn-light btn-sm" id="pbutton">DevMatch Ruby on Rails SaaS App</button></a></div>
+							<div class="col-xl-3 col-lg-4 col-md-6">
+								<a href="https://repl.it/@Christonja/ProperCompleteInstructions" target="_blank"><img class="img-fluid" src="Project-Images/change.PNG" alt="Cash Register"><button class="btn btn-light btn-sm" id="pbutton">Cash Register</button></a>
+							</div>
+							<div class="col-xl-3 col-lg-4 col-md-6">
+								<a href="https://repl.it/@Christonja/FrailAnimatedClass" target="_blank"><img class="img-fluid" src="Project-Images/telephone.PNG" alt="Telephone Number Validator"><button class="btn btn-light btn-sm" id="pbutton">Telephone Number Validator</button></a>
+							</div>
+							<div class="col-xl-3 col-lg-4 col-md-6">
+								<a href="https://repl.it/@Christonja/NextSympatheticFreesoftware" target="_blank"><img class="img-fluid" src="Project-Images/caesar.PNG" alt="Caesars Cipher"><button class="btn btn-light btn-sm" id="pbutton">Caesars Cipher</button></a>
+							</div>
+							<div class="col-xl-3 col-lg-4 col-md-6">
+								<a href="https://repl.it/@Christonja/ClientsideAttentiveCubase" target="_blank"><img class="img-fluid" src="Project-Images/roman-num.PNG" alt="Roman Numeral Converter"><button class="btn btn-light btn-sm" id="pbutton">Roman Numeral Converter</button></a>
+							</div>
+							<div class="col-xl-3 col-lg-4 col-md-6">
+								<a href="https://repl.it/@Christonja/AngelicSeveralGeneric" target="_blank"><img class="img-fluid" src="Project-Images/palindrome.PNG" alt="Palindrome Checker"><button class="btn btn-light btn-sm" id="pbutton">Palindrome Checker</button></a>
+							</div>
+							<div class="col-xl-3 col-lg-4 col-md-6">
+								<a href="https://codepen.io/christonja/full/wXZxWX/" target="_blank"><img class="img-fluid" src="Project-Images/Landing-Page.PNG" alt="Product Landing Page"><button class="btn btn-light btn-sm" id="pbutton">Product Landing Page</button></a>
+							</div>
+							<div class="col-xl-3 col-lg-4 col-md-6">
+								<a href="https://codepen.io/christonja/full/PBorLZ/" target="_blank"><img class="img-fluid" src="Project-Images/Portfolio.PNG" alt="Portfolio"><button class="btn btn-light btn-sm" id="pbutton">Portfolio</button></a>
+							</div>
+							<div class="col-xl-3 col-lg-4 col-md-6">
+								<a href="https://codepen.io/christonja/full/QxzeJQ/" target="_blank"><img class="img-fluid" src="Project-Images/Survey-Form.PNG" alt="Survey Form"><button class="btn btn-light btn-sm" id="pbutton">Survey Form</button></a>
+							</div>
+							<div class="col-xl-3 col-lg-4 col-md-6">
+								<a href="https://codepen.io/christonja/full/oyKxea/" target="_blank"><img class="img-fluid" src="Project-Images/Technical-Doco.PNG" alt="Technical Documentation"><button class="btn btn-light btn-sm" id="pbutton">Technical Documentation</button></a>
+							</div>
+							<div class="col-xl-3 col-lg-4 col-md-6">
+								<a href="https://codepen.io/christonja/full/VdqOEM/" target="_blank"><img class="img-fluid" src="Project-Images/Tribute-Page.PNG" alt="Tribute Page"><button class="btn btn-light btn-sm" id="pbutton">Tribute Page</button></a>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
+
 		<div class="copytext"> 
 			<div>
 				<p><b>Website Designed and Created by Christon Altmann 2018</b></p>
-				Icons made by <a href="http://www.freepik.com" title="Freepik" target="_blank">Freepik</a>, <a href="https://www.flaticon.com/authors/icomoon" title="Icomoon" target="_blank">Icomoon</a>, <a href="https://www.flaticon.com/authors/simpleicon" title="SimpleIcon" target="_blank">SimpleIcon</a> and <a href="https://www.flaticon.com/authors/pixel-buddha" title="Pixel Buddha" target="_blank">Pixel Buddha</a> from <a href="https://www.flaticon.com/" title="Flaticon" target="_blank">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>. Free Code Camp Icon is courtesy of Font Awesome. 
+				<p>Updated March 2019</p>
 			</div>
 		</div>
+		<!-- Jquery -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<!-- Bootstrap JS -->
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	</body>
 </html>

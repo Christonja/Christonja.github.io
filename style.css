@@ -1,12 +1,10 @@
 
 
 h1 {
-	font-family: "Bungee Hairline", monospace;
+	font-family: "Poiret One", sans-serif;
 }
 
-.container-fluid {
-	padding: 0;
-}
+
 .navbar {
 	background-color: rgba(41,128,185, 0.2);
 	transition: background-color 1s;
@@ -16,8 +14,10 @@ h1 {
 	background-color: rgb(41,128,185);
 }
 
-.welcome-hr {
-	width: 400px;
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
 }
 
 .jumbotron {
@@ -32,6 +32,15 @@ h1 {
 .jumbotron h1 {
 	font-size: 4em;
 	font-weight: bold;
+}
+
+.navbar-brand {
+	font-family: "Poiret One", sans-serif;
+}
+
+.nav-link {
+	font-family: "Comfortaa", sans-serif;
+	font-size: 0.9em;
 }
 
 .welcome {
@@ -88,19 +97,19 @@ h1 {
 }
 
 #follow {
-	background: #efeff7;
+	background: #efeff7; /* Old browsers */
+	background: -moz-linear-gradient(top, #efeff7 0%, #ffffff 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #efeff7 0%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #efeff7 0%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efeff7', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
 }
 
-#blogs h1, #follow h1, #resources h1
+#blogs h1, #follow h1, #resources h1, #projects h1
 {
 	padding-top: 10px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-}
-
-#projects h1 {
-	padding-top: 10px;
 }
 
 .follow-links {
@@ -129,6 +138,22 @@ h1 {
 	margin-top: 15px;
 }
 
+.navbar-nav i {
+	padding: 5px;
+}
+
+.navbar-nav .fa-home {
+	padding-right: 4px;
+}
+
+.navbar-nav .fa-user-plus {
+	padding-right: 3px;
+}
+
+.navbar-nav .fa-project-diagram {
+	padding-right: 2px;
+}
+
 #resources {
 	background: #efeff7;
 }
@@ -138,9 +163,8 @@ h1 {
 }
 
 .copytext {
-	font-size: 1em;
-	font-family: "Titillium Web", sans-serif;
-	background: #efeff7;
+	font-size: 0.8em;
+	font-family: "Poiret One", sans-serif;
 	text-align: center;
 	padding: 20px 0;
 	width: 100vw;
@@ -161,11 +185,20 @@ h1 {
 #pbutton {
 	width: 100%;
 	margin: 10px 0;
+	font-family: Comfortaa;
+	font-size: 0.7em;
 }
 
 #rbutton {
 	width: 85%;
 	margin-bottom: 5px;
+	font-family: Comfortaa;
+	font-size: 0.8em;
+}
+
+.desc {
+	font-family: Comfortaa;
+	font-size: 0.8em;
 }
 
 ul {

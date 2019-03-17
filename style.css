@@ -2,6 +2,10 @@ h1 {
 	font-family: "Poiret One", sans-serif;
 }
 
+html, body {
+	max-width: 100%;
+	overflow-x: hidden;
+}
 
 .navbar {
 	background-color: rgba(41,128,185, 0.2);
@@ -24,7 +28,6 @@ hr {
 	background: -webkit-linear-gradient(to bottom, #2980b9, #6dd5fa, #ffffff);  /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to bottom, #2980b9, #6dd5fa, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	height: 50vh;
-	width: 100vw;
 }
 
 .jumbotron h1 {
@@ -42,20 +45,20 @@ hr {
 }
 
 .welcome {
-	margin-top: 10vh;
+	margin-top: 15vh;
 }
 
-/* .img-fluid {
-	width: 100vw;
- 	height: 220px;
- 	border: 1px solid lightgrey;
-	object-fit: cover;
-} */
-/* 
-.flex {
-	display: flex;
-	flex-wrap: wrap;
-} */
+.title {
+	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+	0px 8px 13px rgba(0,0,0,0.1),
+	0px 18px 23px rgba(0,0,0,0.1);
+}
+
+@media (max-height: 800px) {
+	.jumbotron {
+		height: 400px;
+	}
+}
 
 #projects a img:hover + button{
  	background-color: #cff0fc;
@@ -187,14 +190,6 @@ hr {
 	color: white;
 }
 
-
-/* #pbutton {
-	width: 100%;
-	margin: 10px 0;
-	font-family: Comfortaa;
-	font-size: 0.7em;
-} */
-
 #rbutton {
 	width: 85%;
 	margin-bottom: 5px;
@@ -218,5 +213,14 @@ ul {
 
 .card a {
 	width: 100%;
-	
+}
+
+.my-btn {
+	width: 200px;
+	color: black;
+}
+
+.about {
+	text-align: justify;
+	line-height: 2em;
 }

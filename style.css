@@ -229,6 +229,17 @@ ul {
 	width: 100%;
 }
 
+.cert-text {
+	text-align: justify;
+	line-height: 2em;
+}
+
+.cert img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
 .my-btn {
 	width: 200px;
 	color: white;
@@ -250,3 +261,8 @@ ul {
 	font-size: 0.9em;
 }
 
+.l-resume {
+	list-style: none;
+	line-height: 2em;
+	text-align: justify;
+}

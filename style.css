@@ -223,6 +223,7 @@ ul {
 .card img {
 	height: 250px;
 	object-fit: cover;
+	object-position: 50% 0;
 } 
 
 .card a {

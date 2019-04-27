@@ -8,4 +8,20 @@ $(document).ready(function() {
         $('.navbar').removeClass('solid');
     }
   });
+  //onclick method for dropdowns toggling on and off
+  $(".fa-minus").toggle();
+  $(".dropdown1").toggle();
+  $(".dropdown2").toggle();
+
+  $(".toggle-drop1").click(function() {
+    $(".td1").toggle();
+    $(".dropdown1").toggle();
+  });
+
+  $(".toggle-drop2").click(function() {
+    $(".td2").toggle();
+    $(".dropdown2").toggle();
+  });
+
 });
+

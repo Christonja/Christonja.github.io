@@ -196,7 +196,7 @@ hr {
 	background-color: #bcedff;
 }
 
-.card .btn {
+.card .btn, .rbutton {
 	border: 1px solid #6dd5fa;
 	color: #6dd5fa;
 }
@@ -206,10 +206,15 @@ hr {
 	color: white;
 }
 
-#rbutton {
-	width: 85%;
-	margin-bottom: 5px;
-	font-size: 0.8em;
+.rbutton {
+	color: #2bc7ff;
+	text-align: center;
+	font-size: 0.9em;
+}
+
+.rbutton:hover {
+	background-color: #6dd5fa;
+	color: white;
 }
 
 .desc {

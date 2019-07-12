@@ -272,3 +272,9 @@ ul {
 	line-height: 2em;
 	text-align: justify;
 }
+
+.rotation {
+    transform: rotate(360deg);
+    transition-duration: 1.5s;
+    -webkit-transition-duration:1s;
+}

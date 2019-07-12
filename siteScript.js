@@ -8,6 +8,7 @@ $(document).ready(function() {
         $('.navbar').removeClass('solid');
     }
   });
+  
   //onclick method for dropdowns toggling on and off
   $(".fa-minus").toggle();
   $(".dropdown1").toggle();
@@ -21,6 +22,18 @@ $(document).ready(function() {
   $(".toggle-drop2").click(function() {
     $(".td2").toggle();
     $(".dropdown2").toggle();
+  });
+
+  $('.toggle-drop1').hover(function() {
+    $('.td1').addClass("rotation");
+  }, function() {
+    $('.td1').removeClass("rotation");
+  });
+
+  $('.toggle-drop2').hover(function() {
+    $('.td2').addClass("rotation");
+  }, function() {
+    $('.td2').removeClass("rotation");
   });
 
 });

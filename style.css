@@ -130,31 +130,54 @@ hr {
 	align-items: center;
 }
 
-.follow-links {
+#follow-links {
 	list-style: none;
+	padding-top: 10px;
 }
 
-.follow-links li a {
-	text-decoration: none;
+#follow-links .col-8 a {
 	transition: color 0.5s;
 	color: black;
-	font-size: 1em;
+	text-decoration: none;
 }
 
-.follow-links li a:hover {
+#follow-links .col-8 a:hover {
+	color: #6dd5fa;
+	text-decoration: none;
+}
+
+#follow-links .col-8 {
+	padding-left: 45px;
+	padding-top: 10px;
+	font-size: 1.2em;
+	text-decoration: none;
+}
+
+#follow-links .col-4 {
+	text-align: center;
+	padding-top: 10px;
+}
+
+#follow-links i {
+	font-size: 2em;
+	color: black;
+	transition: color 0.5s;
+}
+
+#follow-links i:hover {
 	color: #6dd5fa;
 }
 
-.follow-links i {
-	font-size: 3em;
+/* .follow-links span {
+	font-size: 1.3em;
 	padding: 5px;
-}
+} */
 
-.follow-links span {
+/* .follow-links span {
 	float: right;
 	margin-right: 50px;
 	margin-top: 15px;
-}
+} */
 
 .navbar-nav i {
 	padding: 5px;
